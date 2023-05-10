@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="413dp"
+        android:layout_height="69dp"
+        android:background="@drawable/mytext_border"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="Longitudinal Analysis of Breast Cancer"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="600dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Time Since Cancer Detection"
+                android:id="@+id/time"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mean of Radius"
+                android:id="@+id/radius_mean"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mean of Texture"
+                android:id="@+id/texture_mean"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mean of Smoothness"
+                android:id="@+id/smoothness_mean"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mean of Compactness"
+                android:id="@+id/compactness_mean"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mean of Concave Points"
+                android:id="@+id/concave_mean"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mean of symmetry"
+                android:id="@+id/symmetry_mean"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mean of fractal Dimension"
+                android:id="@+id/fractal_dimension_mean"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Standard Error of Texture"
+                android:id="@+id/texture_se"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Standard Error of Perimeter"
+                android:id="@+id/perimeter_se"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Standard Error of Smoothness"
+                android:id="@+id/smoothness_se"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Stanard Error of Concavity"
+                android:id="@+id/concavity_se"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Standard Error of Concave Points"
+                android:id="@+id/concave_points_se"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Standard Error of Symmetry"
+                android:id="@+id/symmetry_se"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Standard Error of Fractal Dimension"
+                android:id="@+id/fractal_dimension_se"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Worst Case of Smoothness"
+                android:id="@+id/smoothness_worst"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Worst Case of Compactness"
+                android:id="@+id/compactness_worst"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Worst Case of Concave Points"
+                android:id="@+id/concave_points_worst"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Worst Case of Symmetry"
+                android:id="@+id/symmetry_worst"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tumor Size"
+                android:id="@+id/tumor_size"
+                android:layout_marginTop="20dp"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/lymph_node_status"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_marginTop="20dp"
+                android:hint="Status of Lymph Node"></EditText>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/alegreya_sc_bold_italic"
+        android:text="PREDICT"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
